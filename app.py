@@ -2,8 +2,8 @@
 #import telegram
 from telegram import Update
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, CallbackContext)
-# import os 
-import configparser
+import os #Lab5.7.1
+import configparser #Lab5.7.2
 import logging
 import redis
 
@@ -21,7 +21,7 @@ def main():
     config = configparser.ConfigParser()
     config.read('config.ini')
     updater = Updater(token=(config['TELEGRAM']['ACCESS_TOKEN']), use_context=True)
-    # updater = Updater(token=(os.environ['ACCESS_TOKEN']), use_context=True)
+    # updater = Updater(token=('6565812077:AAEl-75tFOKjtPYhglY_xXCx7dswWEvsTxo'), use_context=True) #Lab5.7.
     dispatcher = updater.dispatcher
     global redis1
     redis1 = redis.Redis(host=(config['REDIS']['HOST']),
