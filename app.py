@@ -1,5 +1,5 @@
 #chatbot.py
-#import telegram
+import telegram
 from telegram import Update
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, CallbackContext)
 import os #Lab5.7.1
