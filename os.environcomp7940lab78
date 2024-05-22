@@ -9,9 +9,9 @@ ACCESS_TOKEN = 7090085173:AAEWYRaqleogIyZySqSgfUl_CL0O3rUgjHg
 ; print(config['TELEGRAM']['ACCESS_TOKEN'])
 
 [REDIS]
-HOST = redis-12769.c1.us-east1-2.gce.cloud.redislabs.com
-PASSWORD = 1eFQnEjMb6hbumj3d1xb1eeGwQ4pDUxL
-REDISPORT = 12769
+HOST = redis-14914.c299.asia-northeast1-1.gce.redns.redis-cloud.com
+PASSWORD = vX5dWB9JT4IKR3k0aM1AefZQlS20X4Ej
+REDISPORT = 14914
 
 [CHATGPT]
 BASICURL = https://chatgpt.hkbu.edu.hk/general/rest
