@@ -1,0 +1,18 @@
+# part3.yaml
+version: '3'
+services:
+  chatbot:
+    image: ponglin/chatbot_amd64
+    environment:
+      - ACCESS_TOKEN_TG=7090085173:AAEWYRaqleogIyZySqSgfUl_CL0O3rUgjHg
+      - ACCESS_TOKEN_CHATGPT=c813af90-2980-4c99-9bf5-8cf8e0eaa493
+      - PASSAWORD_REDIS=1eFQnEjMb6hbumj3d1xb1eeGwQ4pDUxL
+      - PORT_REDIS=6379
+      - HOST_REDIS=redis
+    depends_on:
+      - redis
+  redis:
+    image: redis
+    volumes :
+      - ./redis.conf:/Users/ponglin/COMP7940-Lab7-8/redis.conf
+    command: ["/Users/ponglin/COMP7940-Lab7-8/redis.conf"]

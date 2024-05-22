@@ -1,0 +1,11 @@
+# part2.yaml
+version: '3'
+services:
+  chatbot:
+    image: chatbot-lab7-8
+    environment:
+      - ACCESS_TOKEN_TG=7090085173:AAEWYRaqleogIyZySqSgfUl_CL0O3rUgjHg
+      - ACCESS_TOKEN_CHATGPT=c813af90-2980-4c99-9bf5-8cf8e0eaa493
+      - PASSWORD_REDIS=1eFQnEjMb6hbumj3d1xb1eeGwQ4pDUxL
+      - PORT_REDIS=12769
+      - HOST_REDIS=redis-12769.c1.us-east1-2.gce.cloud.redislabs.com
