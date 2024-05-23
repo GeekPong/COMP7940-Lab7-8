@@ -6,8 +6,8 @@ services:
     environment:
       - ACCESS_TOKEN_TG=7090085173:AAEWYRaqleogIyZySqSgfUl_CL0O3rUgjHg
       - ACCESS_TOKEN_CHATGPT=c813af90-2980-4c99-9bf5-8cf8e0eaa493
-      - PASSAWORD_REDIS=1eFQnEjMb6hbumj3d1xb1eeGwQ4pDUxL
-      - PORT_REDIS=6379
+      - PASSAWORD_REDIS=vX5dWB9JT4IKR3k0aM1AefZQlS20X4Ej
+      - PORT_REDIS=14914
       - HOST_REDIS=redis
     depends_on:
       - redis
